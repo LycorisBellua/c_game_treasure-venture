@@ -11,7 +11,8 @@
 
 void	run_play(t_man *man)
 {
-	int	i;
+	int					i;
+	static const char	*argv[] = { LIB_PATH_20SQ, "opponent_ai", 0 };
 
 	for (i = 0; i < NBR_CHARAS; ++i)
 	{
@@ -27,7 +28,7 @@ void	run_play(t_man *man)
 	printf("\t[Do you want to play Twenty Squares with the %s? Yes/No]\n\n",
 		man->charas[0].current_loc->charas[i]->tags[1]);
 	if (ask_yes_no())
-		run_plugin(LIB_PATH_20SQ, "Twenty Squares");
+		run_plugin(LIB_PATH_20SQ, "Twenty Squares", argv);
 	describe_loc(man, man->charas[0].current_loc);
 	return;
 }

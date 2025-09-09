@@ -18,6 +18,6 @@
 #  define LIB_ERROR dlerror()
 # endif
 
-void	run_plugin(const char *path, const char *name);
+void	run_plugin(const char *path, const char *name, const char **argv);
 
 #endif

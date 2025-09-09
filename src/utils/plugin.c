@@ -1,5 +1,7 @@
 #include "plugin.h"
 
+size_t	count_arr(void **arr);
+
 # ifdef _WIN32
 const char	*win_dlerror(void)
 {
@@ -11,7 +13,7 @@ const char	*win_dlerror(void)
 }
 #endif
 
-void	run_plugin(const char *path, const char *name)
+void	run_plugin(const char *path, const char *name, const char **argv)
 {
 	LIB_HANDLE	lib_obj;
 	int			(*lib_func)(int argc, char **argv);
@@ -35,7 +37,7 @@ void	run_plugin(const char *path, const char *name)
 		UNLOAD_LIB(lib_obj);
 		return ;
 	}
-	(*lib_func)(0, NULL);
+	(*lib_func)(count_arr((void **)argv), (char **)argv);
 	UNLOAD_LIB(lib_obj);
 	return ;
 }

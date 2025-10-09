@@ -1,11 +1,11 @@
 # Treasure Venture
 
-[Link to the download page (Itch.io)](https://lycorisdev.itch.io/treasure-venture)  
+[Link to the download page (Itch.io)](https://lycorisbellua.itch.io/treasure-venture)  
 
 *Treasure Venture* is a text adventure game, which means it's interacted with 
 through written commands, and only displays written text. There is no graphical 
 element. *Treasure Venture* also contains a mini-game entitled 
-"[Twenty Squares](https://github.com/LycorisDev/c_game_twenty-squares)", that I 
+"[Twenty Squares](https://github.com/LycorisBellua/c_game_twenty-squares)", that I 
 leave you to discover as well as the game itself. Both of these projects are 
 written in C.  
 

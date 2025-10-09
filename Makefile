@@ -23,7 +23,7 @@ $(DIR_OBJ)/%.o: %.c
 
 20SQ:
 	@mkdir -p $(DIR_20SQ)
-	@git clone --quiet https://github.com/LycorisDev/c_game_twenty-squares.git
+	@git clone --quiet https://github.com/LycorisBellua/c_game_twenty-squares.git
 	@$(MAKE) -s -C c_game_twenty-squares
 	@cp c_game_twenty-squares/build/linux/lib20SQ.so $(DIR_20SQ)/.
 	@$(MAKE) -s win64 -C c_game_twenty-squares

@@ -157,7 +157,6 @@ void		run_menu_cmd(t_man *man, const char **tokens);
 void		run_submenu_new(t_man *man);
 void		run_submenu_load(t_man *man);
 void		run_submenu_save(t_man *man);
-void		run_submenu_about(t_man *man);
 void		run_submenu_quit(t_man *man);
 int			save_game(t_man *man, const char *filepath);
 int			load_saved_game(t_man *man, const char *filepath);

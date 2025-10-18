@@ -32,8 +32,6 @@ static void	(*select_submenu(const char **tokens))(t_man *man)
 	{
 		if (!strcmp(tokens[0], "save"))
 			return (run_submenu_save);
-		else if (!strcmp(tokens[0], "about"))
-			return (run_submenu_about);
 		else if (!strcmp(tokens[0], "quit"))
 			return (run_submenu_quit);
 	}

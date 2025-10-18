@@ -6,6 +6,6 @@ void	open_menu(t_man *man)
 	clear_window();
 	printf("\t-[ TREASURE VENTURE ]-\n\n");
 	printf("\t[During the game, type 'Menu' to go back to the main menu.]\n\n");
-	printf("\t 'New Game'    'Load Game'    'Save'    'About'    'Quit'\n\n");
+	printf("\t 'New Game'    'Load Game'    'Save'    'Quit'\n\n");
 	return ;
 }

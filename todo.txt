@@ -15,3 +15,15 @@ REFACTORING
 [ ] src/menu/submenu/*
 [ ] src/menu/save/*
 [ ] src/game/*
+
+--------------------------------------------------------------------------------
+
+EVENTS
+
+- There was a TODO note in src/game/locations/describe.c (`describe_loc()`) 
+about the mansion exterior description:
+
+```
+Remove the need for this temporary fix. The geo_aff should be described without 
+being hardcoded, a bit like an event.
+```

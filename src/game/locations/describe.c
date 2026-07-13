@@ -10,10 +10,6 @@ void	describe_loc(t_man *man, const t_loc *loc)
 	else
 		printf("You are in the %s. ", man->charas[0].current_loc->tags[0]);
 
-	/*
-		TODO: Remove the need for this temporary fix. The geo_aff should be 
-		described without being hardcoded, a bit like an event.
-	*/
 	if (loc->bool_is_indoors)
 		printf("%s ", loc->desc);
 	else
